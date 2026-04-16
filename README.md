@@ -23,8 +23,6 @@ Find and fix as many bugs as possible. Each bug has a category, a severity, and 
 All 29 bugs are listed in [`bug-exp.md`](./bug-exp.md) at the root of the project. Each entry tells you:
 - Which **file** the bug is in
 - What the **symptom** looks like
-- What the **root cause** is
-- The **fix** you need to apply
 
 ### Bug Categories
 There are 7 categories of bugs:
@@ -315,18 +313,14 @@ flowchart TD
 ## ❓ FAQ
 
 **Q: Do I need to know React to participate?**
-A: Basic React knowledge helps, but `bug-exp.md` explains every bug in plain English. You can fix many bugs just by reading the description carefully.
+A: Basic React knowledge helps, but `bug-exp.md` explains every bug.
 
 **Q: The app looks fine when I open it — where are the bugs?**
 A: Most bugs only appear when you interact with the app. Try: typing in the login form, scrolling the feed quickly, liking a post twice, opening and closing the profile modal, or changing settings and navigating away.
-
-**Q: Can I use AI tools to help?**
-A: That's up to the competition rules. The bugs are specifically designed to be tricky for AI tools too — they look like correct code at first glance.
 
 **Q: What if the app crashes?**
 A: It shouldn't — all bugs are designed to be silent failures, not crashes. If you see a crash, check if you accidentally introduced a new bug while editing.
 
 **Q: How do I verify my fix worked?**
 A: Reproduce the symptom described in `bug-exp.md` before your fix, apply the fix, then try to reproduce it again. If the symptom is gone, you fixed it.
-# codesurgery
 # codesurgery
